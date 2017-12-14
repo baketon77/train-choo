@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <script src="assets/app/app.js"></script>
+  
+  <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <meta charset="UTF-8">
+  <title>Sign-Up Today!</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <br>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron" id=jumbotron>
+      <h1 class="text-center">Train Times!!</h1>
+    </div>
+    <div class="row">
+
+      <!-- Sign-Up Panel-->
+      <div class="col-lg-10">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"></h3>
+          </div>
+          <div class="panel-body">
+
+            <!-- Sign-up Form (note the various input "types")-->
+            <form role="form">
+              <div class="form-group">
+                <label for="name-input"> train Name:</label>
+                <input class="form-control" id="name-input" type="text">
+              </div>
+              <div class="form-group">
+                <label for="email-input">destinatio:</label>
+                <input class="form-control" id="email-input" type="email">
+              </div>
+              <div class="form-group">
+                <label for="age-input">fist train time (HH:mm-military time) </label>
+                <input class="form-control" id="age-input" type="number">
+              </div>
+              <div class="form-group">
+                <label for="comment-input">frequency (min)</label>
+                <textarea class="form-control" id="comment-input" rows="5"></textarea>
+              </div>
+              <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Most Recent Member Panel -->
+      <div class="col-lg-10">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">t</h3>
+          </div>
+          <div class="panel-body" id="recent-member">
+            <h2 id="name-display">Jimmy John</h2>
+            <h4 id="email-display">Email: jimmy@john.edu</h4>
+            <h4 id="age-display">Age: 27</h4>
+            <p id="comment-display">I'm signing up, because I want to spread sandwiches to the world.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <!-- LINK TO FIREBASE GOES HERE -->
+ 
+
+  
+
+
+</body>
+
+</html>
